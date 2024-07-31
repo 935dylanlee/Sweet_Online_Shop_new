@@ -1,0 +1,31 @@
+// @import "../PingFang-main/TrueType_Collection_format/PingFang.ttc";
+
+@font-face {
+    font-family: 'PingFang';
+    src: url('../PingFang-main/PingFangTC-Light.otf')format("Light");
+    src: url('../PingFang-main/PingFangTC-Medium.otf')format("Medium");
+    src: url('../PingFang-main/PingFangTC-Regular.otf')format("Regular");
+    src: url('../PingFang-main/PingFangTC-Semibold.otf')format("Semibold");
+    src: url('../PingFang-main/PingFangTC-Thin.otf')format("Thin");
+    src: url('../PingFang-main/PingFangTC-Ultralight.otf')format("Ultralight");
+}
+
+
+body {
+    font-family: 'PingFang';
+    font-size: 1rem;
+    // font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-primary); 
+    text-align: left;
+    background-color: #fff;
+}
+
+.sub-input.form-control:focus {
+    box-shadow: none; 
+}
+footer{
+    a{
+        text-decoration: none;
+    }
+}

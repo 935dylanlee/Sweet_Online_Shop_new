@@ -1,0 +1,60 @@
+.item-card {
+    .item-image {
+        height: 315px;
+        position: relative;
+
+        .item-stared-icon {
+            position: absolute;
+            top: 20px;
+            right: 22px;
+            font-size: 1.25rem;
+        }
+
+        .item-tag {
+            color: white;
+            background-color: $primary;
+            position: absolute;
+            left: 15px;
+            writing-mode: vertical-rl;
+            padding: 10px;
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+    }
+
+    .item-body {
+        border: 1px solid $info;
+        color: #3F5D45;
+        
+
+        &-text {
+            display:inline-block;
+            border-right: 1px solid $info;
+            padding: 15px;
+            font-size: 1.25rem;
+            
+        }
+
+        &-price {
+            padding: 15px; 
+            font-size: 1.25rem;
+            
+        }
+
+        &-btn {
+                color: #3F5D45;
+                background-color: #EAF0ED;
+                font-size: 1.5rem;
+                padding: 12px;
+                font-weight: 700; 
+                width: 100%;
+                display: block;
+                @extend .btn; 
+                &.active,
+                &:hover{
+                    color: #EAF0ED;
+                    background-color:#3F5D45;
+            }
+        }       
+    }
+}

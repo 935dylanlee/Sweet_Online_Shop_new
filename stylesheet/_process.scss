@@ -1,0 +1,70 @@
+.process-steps {
+  $circle-size: 20px;
+  display: flex;
+  justify-content: space-between; 
+  position: relative;             
+
+  // 空心 circle
+  .step-circle {
+    height: $circle-size;
+    width: $circle-size;
+    border: 1px solid var(--bs-info); 
+    border-radius: 50%; // 圓形
+    position: relative;
+    background-color: var(--bs-primary); 
+    z-index: 1;                   // 把 circle 排到線條上面
+    display: flex;
+    align-items: center;          // 實心 circle 定位
+    justify-content: center;      
+  }
+  // 時間線線條
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--bs-info); 
+  }
+
+  // 實心 circle
+  .step-circle.active {
+    border-color: var(--bs-info);
+    &:after {
+      content: "";
+      height: $circle-size - 6;
+      width: $circle-size - 6;
+      display: block;
+      background-color: var(--bs-info); 
+      border-radius: 50%; 
+    }
+  }
+  // 勾勾
+  .step-circle.completed {
+    font-size: 1rem;
+    background-color: var(--bs-info); 
+    color: var(--bs-primary); 
+  }
+
+  // Theme
+  &.process-steps-dark {
+    border-color: var(--bs-primary); 
+    &:after {
+      background-color: var(--bs-primary); 
+    }
+    .step-circle {
+      border-color: var(--bs-primary); 
+    }
+    .step-circle.active {
+      border-color: var(--bs-primary); 
+      &:after {
+        background-color: var(--bs-primary); 
+      }
+    }
+    .step-circle.completed {
+      background-color: var(--bs-primary); 
+      color: var(--bs-info); 
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../node_modules/bootstrap/scss/functions"; // 1. 包含函数
+@import "../helpers/variables"; // 确保变量在使用之前定义
+@import "../node_modules/bootstrap/scss/variables"; // 添加默认变量覆盖
+@import "../node_modules/bootstrap/scss/variables-dark"; // 添加暗色模式变量
+@import "../node_modules/bootstrap/scss/bootstrap"; // 确保使用最新版本的 Bootstrap
+@import "../node_modules/bootstrap/scss/maps"; // 添加地图
+@import "../node_modules/bootstrap/scss/mixins"; // 添加混合宏
+@import "../node_modules/bootstrap/scss/root"; // 添加根样式
+@import "layout";
+@import "utilities"; // 可能需要根据需要调整顺序
+// @import "../node_modules/bootstrap/scss/reboot"; // 添加重置样式
+@import "../node_modules/bootstrap/scss/type"; // 添加排版样式
+@import "../node_modules/bootstrap/scss/images"; // 添加图像样式
+@import "../node_modules/bootstrap/scss/containers"; // 添加容器样式
+@import "../node_modules/bootstrap/scss/grid"; // 添加网格样式
+@import "../node_modules/bootstrap/scss/helpers"; // 添加辅助样式
+@import "../node_modules/bootstrap/scss/utilities/api"; // 添加工具类 API
+@import "form-square";
+@import "cart";
+@import "item";
+@import "header";
+@import "process";
+@import "section";
+@import "custom-bs";
+@import "interactive";
